@@ -1,0 +1,27 @@
+{
+  "name": "html-css-js-projects-clean-code",
+  "version": "1.0.0",
+  "description": "100 repo fighting",
+  "main": "index.js",
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithduong05/html-css-js-projects-clean-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewithduong05/html-css-js-projects-clean-code/issues"
+  },
+  "homepage": "https://github.com/codewithduong05/html-css-js-projects-clean-code#readme",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
