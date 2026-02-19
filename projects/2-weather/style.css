@@ -1,25 +1,4 @@
-h1 {
-    font-size: 30px;
-
-}
-
-.container h1 {
-    color: white;
-    font-weight: 700;
-}
-
-.container {
-    /* background-color: red; */
-    width: 900px;
-    height: 400px;
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    gap: 20px;
-}
-
+/* General reset for all boxes */
 .box {
     width: 200px;
     height: 200px;
@@ -30,60 +9,79 @@ h1 {
     justify-content: center;
     gap: 30px;
     color: white;
-
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-.box1 .box2 .box3 .box4 .box5 {
-    width: 100px;
-    height: 200px;
-
+/* Specific box backgrounds */
+.box1 {
+    background: linear-gradient(0deg, rgba(255, 77, 0, 1) 0%, rgba(253, 29, 29, 1) 25%, rgba(237, 252, 69, 1) 100%);
 }
 
+.box2 {
+    background: linear-gradient(0deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.box3 {
+    background: linear-gradient(0deg, rgba(104, 126, 224, 1) 0%, rgba(0, 208, 255, 1) 100%);
+}
+
+.box4 {
+    background: linear-gradient(0deg, rgba(143, 170, 200, 1) 0%, rgba(213, 237, 245, 1) 100%);
+}
+
+.box5 {
+    background: linear-gradient(180deg, rgba(55, 88, 155, 1) 41%, rgba(47, 94, 143, 1) 53%, rgba(15, 39, 54, 1) 93%);
+}
+
+/* Heading and weather text styles */
+h1 {
+    font-size: 30px;
+}
+
+.container h1 {
+    color: white;
+    font-weight: 700;
+}
+
+/* Container styles */
+.container {
+    width: 900px;
+    height: 400px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 20px;
+}
+
+/* Button About Weather Styles */
 .button_about_weather {
     background-color: whitesmoke;
     padding: 9px;
     border-radius: 10px;
     color: rgb(70, 80, 89);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
-.box1 {
-    /* background-color: #fec883; */
-    border-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: #ff4d00;
-    background: linear-gradient(0deg, rgba(255, 77, 0, 1) 0%, rgba(253, 29, 29, 1) 25%, rgba(237, 252, 69, 1) 100%);
+/* Ensuring the boxes inside .container are of equal height and width */
+.box > h1 {
+    font-size: 24px;
 }
 
-.box2 {
-    background-color: #68b5f9;
-    border-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    background: linear-gradient(0deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+.button_about_weather p {
+    font-size: 14px;
 }
 
-.box3 {
-    border-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    background: #687EE0;
-    background: linear-gradient(0deg, rgba(104, 126, 224, 1) 0%, rgba(0, 208, 255, 1) 100%);
+/* Ensuring that the box sizes are consistent for all boxes */
+.box {
+    flex: 1 1 200px;
 }
 
-.box4 {
-    border-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: #8FAAC8;
-    background: linear-gradient(0deg, rgba(143, 170, 200, 1) 0%, rgba(213, 237, 245, 1) 100%);
+/* Making the text inside the box smaller and consistent */
+.box p {
+    font-size: 16px;
+    text-align: center;
 }
 
-.box5 {
-    border-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: #37589B;
-background: linear-gradient(180deg, rgba(55, 88, 155, 1) 41%, rgba(47, 94, 143, 1) 53%, rgba(15, 39, 54, 1) 93%);
-
-}
